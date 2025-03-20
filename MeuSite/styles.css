@@ -1,20 +1,20 @@
 /* Inicio do arquivo CSS */
 
-/* Reseta os padrões de aparencia */
+/* Reseta os padroes de aparencia */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-
+/* Definicao de padroes globais */
 body {
   display: flex;
   justify-content: center;
   align-items: center;
   height: 100vh;
   font-size: 100%;
-  /*text-align: center;*/
+  text-align: center;
   /*margin: 20px auto;*/
   background-color: #212121;
   color: #EEE;
@@ -22,37 +22,80 @@ body {
 
 
 
-/* Definir uma largura máxima para o conteúdo */
+/* Definicao do campo main e suas tags internas */
 main {
   max-width: 600px;
   padding: 20px;
   border-radius: 10px;
+  text-align: justify;
+  margin: 75px;
 }
 
-
+/* Tags de texto: titulo e paragrafo */
 h1 {
-  font-size: 2.5em;
+  font-size: 3.0em;
 }
 
-/* Ajustar cabeçalho */
+h2 {
+  font-size: 2.3em;
+}
+
+p {
+  font-size: 1.2em;
+  margin-top: 25px;
+  margin-bottom: 10px;
+}
+
+/* Definicao do campo header e suas tags internas */
 header {
   margin-bottom: 20px;
-  text-align: center;
+}
+
+nav {
+  margin: 20px;
 }
 
 nav a {
   text-decoration: none;
   margin: 0 10px;
-  color: #333;
+  color: #00ffff;
   font-weight: bold;
 }
 
+/* Definicao do campo footer e suas tags internas */
 footer ul li{
   display: inline-block;
   margin-right: 10px;
 }
 
 footer a {
+  text-decoration: none;
+  margin: 0 10px;
+  color: #00ffff;
+  font-weight: bold;
+}
+
+/* Definicao para outras paginas alem index */
+/* Contato */
+/* Definicao do campo main */
+dl {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 20px;
+  font-size: 1.1em;
+}
+
+dt {
+  font-weight: bold;
+  width: 150px;
+}
+
+dd {
+  margin: 0px;
+  width: calc(100% - 150px);
+}
+
+dd a {
   text-decoration: none;
   margin: 0 10px;
   color: #00ffff;
